@@ -35,7 +35,7 @@
 				    <input type="text" class="form-control" id="exampleInputTitle" placeholder="제목을 입력하세요">
 				    <small id="title" class="form-text text-muted">제목이 설명으로 노출됩니다.</small>
 				  </div>
-				  	  <div class="form-group">
+				 	<div class="form-group">
 				    
 			    	<div class="row">
 					    <div class="col">
@@ -45,6 +45,37 @@
 					    <div class="col">
 					    <label for="exampleInputEmail1">목적지</label>
 					      <input type="text" class="form-control" placeholder="목적지를 입력하세요">
+					    </div>
+				  </div>
+				  </div>
+				  <div class="form-group">
+					  <div class="row">
+					  <div class="ml-5"></div>
+					  <div class="row">
+						  	<div class="form-check">
+							  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+							  <label class="form-check-label" for="exampleRadios1">
+							    편도
+							  </label>
+							</div>
+						  	<div class="form-check">
+							  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+							  <label class="form-check-label" for="exampleRadios1">
+							    왕복
+							  </label>
+							</div>
+						</div>
+					  </div>
+				  </div>
+				  <div class="form-group">
+					  <div class="row">
+					    <div class="col">
+					    <label for="exampleInputEmail1">출발날짜</label>
+					      <input type="text" class="form-control" placeholder="출발날짜를 선택하세요">
+					    </div>
+					    <div class="col">
+					    <label for="exampleInputEmail1">도착날짜</label>
+					      <input type="text" class="form-control" placeholder="목적지를 선택하세요">
 					    </div>
 					  </div>
 				  </div>
