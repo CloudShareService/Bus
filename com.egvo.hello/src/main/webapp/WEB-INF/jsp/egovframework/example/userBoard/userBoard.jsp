@@ -1,33 +1,127 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!--==========================
     userBoard Section
   ============================-->
 
-<section id="etc">
+<!-- Page Content -->
 	<div class="container">
-		<div class="row pt-5 pb-5">
-			<div class="col-lg-12 col-sm-6">
-				<h1 class="center" style="text-align:center"><b>Blog Post</b></h1>
-				<div class="form-inline mt-5 w-100" style="height:500px">
-					<div class="w-70 h-100">
-						<img class="w-100 h-100" src="images/card/card_5.png">
+
+		<!-- Page Heading/Breadcrumbs -->
+		<h2 class="mt-4 mb-3">
+			자유게시판
+			<!-- <small>Subheading</small> -->
+		</h2>
+
+		<!-- <ol class="breadcrumb">
+			<li class="breadcrumb-item">
+				<a href="index.html">Home</a>
+			</li>
+			<li class="breadcrumb-item active">About</li>
+		</ol> -->
+
+		<!-- Content Row -->
+		<div class="row">
+			<!-- Sidebar Column -->
+			<!-- <div class="col-lg-3 mb-4">
+				<div class="list-group">
+					<a href="index3.jsp" class="list-group-item">나의 정보</a>
+					<a href="index.jsp" class="list-group-item">나의 문의 내역</a>
+					<a href="index2.jsp" class="list-group-item">나의 신청 내역</a>
+				</div>
+			</div> -->
+			<!-- Content Column -->
+			<div class="col-lg-12 mb-1">
+				<!-- <h2>자유게시판</h2> -->
+				<div class="row mb-2">
+					<div class="col-12 pl-3 pr-1">
+						<ul>
+							<li>총 678개의 게시물이 등록되어있습니다.</li>
+						</ul>
 					</div>
-					<div class="w-30 h-100" style="padding:0.5rem;border:1px solid #ebebeb;">
-						<div class="w-100 h-90 p-4">
-							<div class="h-30" style="text-align:center;font-size:30px;"><b>Eccepteur sint occaecat</b></div>
-							<div class="h-70 pt-3">
-								<p style="font-size:15px;color:#afaeae;">친구랑 신년계획세우고 다욧음식두 해먹구 걍 놀려고 예약했는데 기대이상으로 좋았어여 일단 역에서 가깝고 이마트가있움 조리도구 비치된걸로 밥도해먹구 스피커로 재즈음악들으면서 신년계획두세우구 밖에뷰가좋아서 매트깔구 담요덮고 책도읽었다는 3시간이 어케간지몰라영 빔 있어서 담엔 저녁에 라라랜드보러와야징 또가면 할인해주세요</p>
-							</div>
-						</div>
-						<div class="h-10 w-100" style="text-align:center;">
-							<i class="fa fa-plus-circle" style="font-size:20px;"><b>더 보러가기</b></i>
-						</div>
+					<div class="col-1 pl-3 pr-1">
+						<select class="form-control form-control-sm">
+							<option>제목</option>						
+							<option>내용</option>						
+							<option>작성자</option>						
+						</select>
+					</div>
+					<div class="col-10 pl-0 pr-1">
+						<input class="form-control form-control-sm">
+					</div>
+					<div class="col-1 pl-0">
+						<button class="form-control form-control-sm">검색</button>
 					</div>
 				</div>
+				<table class="table table-hover">
+					<thead class="bg-dark text-white text-center">
+						<tr>
+							<td width="10%">번호</td>
+							<td width="55%">제목</td>
+							<td width="10%">작성자</td>
+							<td width="15%">작성일</td>
+							<td width="15%">조회수</td>
+						</tr>
+					</thead>
+
+					<tbody onclick="location.href='boardDetail.do'">
+						<c:forEach begin="1" end="5" varStatus="i">
+							<tr>
+								<td class="text-center">
+									<c:out value="${i.count }" />
+								</td>
+								<td>제목</td>
+								<td class="text-center">user123</td>
+								<td class="text-center">2019.01.01</td>
+								<td class="text-center">1234</td>
+							</tr>
+						</c:forEach>
+					</tbody>
+				</table>
+				
+				<div class="row mb-3">
+					<div class="col-12 pl-3 pr-1"></div>
+					<div class="col-1 pl-3 pr-1"></div>
+					<div class="col-10 pl-0 pr-1"></div>
+					<div class="col-1 pl-0">
+						<button class="form-control form-control-sm" onclick="location.href='boardWriteForm.do'">글쓰기</button>
+					</div>
+				</div>
+
+				<ul class="pagination justify-content-center mb-4">
+					<li class="page-item">
+						<a class="page-link" href="#" aria-label="Previous">
+							<span aria-hidden="true">«</span>
+							<span class="sr-only">Previous</span>
+						</a>
+					</li>
+					<li class="page-item">
+						<a class="page-link" href="#">1</a>
+					</li>
+					<li class="page-item">
+						<a class="page-link" href="#">2</a>
+					</li>
+					<li class="page-item">
+						<a class="page-link" href="#">3</a>
+					</li>
+					<li class="page-item">
+						<a class="page-link" href="#" aria-label="Next">
+							<span aria-hidden="true">»</span>
+							<span class="sr-only">Next</span>
+						</a>
+					</li>
+				</ul>
+
 			</div>
 		</div>
+		<!-- /.row -->
+
 	</div>
-</section>
+	<!-- /.container -->
+
+	<!-- Bootstrap core JavaScript -->
+	<script src="vendor/jquery/jquery.min.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 <!-- #userBoard -->
 

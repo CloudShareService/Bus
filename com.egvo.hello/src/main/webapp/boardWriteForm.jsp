@@ -84,55 +84,13 @@ th.middle {
 
 		<!-- Page Heading/Breadcrumbs -->
 		<h2 class="mt-4 mb-3">
-			자유게시판 상세화면
+			게시글 작성
 			<!-- <small>Subheading</small> -->
 		</h2>
 
-		<!-- <ol class="breadcrumb">
-			<li class="breadcrumb-item">
-				<a href="index.html">Home</a>
-			</li>
-			<li class="breadcrumb-item active">About</li>
-		</ol> -->
-
 		<!-- Content Row -->
 		<div class="row">
-			<!-- Sidebar Column -->
-			<!-- <div class="col-lg-3 mb-4">
-				<div class="list-group">
-					<a href="index3.jsp" class="list-group-item">나의 정보</a>
-					<a href="index.jsp" class="list-group-item">나의 문의 내역</a>
-					<a href="index2.jsp" class="list-group-item">나의 신청 내역</a>
-				</div>
-			</div> -->
-			<!-- Content Column -->
 			<div class="col-lg-12 mb-1">
-				<!-- <h2>자유게시판</h2> -->
-				<%-- <table class="table table-hover">
-					<thead class="bg-dark text-white text-center">
-						<tr>
-							<td width="10%">번호</td>
-							<td width="55%">제목</td>
-							<td width="10%">작성자</td>
-							<td width="15%">작성일</td>
-							<td width="15%">조회수</td>
-						</tr>
-					</thead>
-
-					<tbody>
-						<c:forEach begin="1" end="5" varStatus="i">
-							<tr>
-								<td class="text-center">
-									<c:out value="${i.count }" />
-								</td>
-								<td>제목</td>
-								<td class="text-center">user123</td>
-								<td class="text-center">2019/01/01</td>
-								<td class="text-center">1234</td>
-							</tr>
-						</c:forEach>
-					</tbody>
-				</table> --%>
 				
 				<table class="table table-bordered">
 				  <tbody>

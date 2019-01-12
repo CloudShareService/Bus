@@ -154,7 +154,7 @@
 					<div class="col-1 pl-3 pr-1"></div>
 					<div class="col-10 pl-0 pr-1"></div>
 					<div class="col-1 pl-0">
-						<button class="form-control form-control-sm" onclick="location.href='boardWriteForm.jsp'">글쓰기</button>
+						<button class="form-control form-control-sm" onclick="location.href='boardWriteForm.do'">글쓰기</button>
 					</div>
 				</div>
 

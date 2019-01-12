@@ -11,4 +11,14 @@ public class UserBoardController {
 
 		return "userBoard/userBoard.tiles";
 	}
+	@RequestMapping(value = "boardDetail.do")
+	public String userBoardDetail() throws Exception {
+
+		return "userBoard/userBoardDetail.tiles";
+	}
+	@RequestMapping(value = "boardWriteForm.do")
+	public String userBoardWriteForm() throws Exception {
+
+		return "userBoard/userBoardWriteForm.tiles";
+	}
 }
