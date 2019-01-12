@@ -8,6 +8,8 @@
 
     <!-- Custom styles for this template -->
     <link href="css/modern-business.css" rel="stylesheet">
+  <script type="text/javascript" src="moment-develop/min/moment.min.js"></script>
+  <script type="text/javascript" src="bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.*.js"></script>
 
 <!-- Page Content -->
 	<div class="container">
@@ -48,6 +50,27 @@
 					    </div>
 				  </div>
 				  </div>
+				  
+				  <div class="container">
+    <div class="row">
+        <div class='col-sm-6'>
+            <div class="form-group">
+                <div class='input-group date' id='datetimepicker1'>
+                    <input type='text' class="form-control" />
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            $(function () {
+                $('#datetimepicker1').datetimepicker();
+            });
+        </script>
+    </div>
+</div>
+				  
 				  <div class="form-group">
 					  <div class="row">
 					  <div class="ml-5"></div>
