@@ -25,7 +25,7 @@
 					<a href="resume.do">기사 게시판</a>
 				</li>
 				<li class="navi_menu" id="nav-intro">
-					<a href="introduction.do">자유 게시판</a>
+					<a href="userBoard.do">자유 게시판</a>
 				</li>
 				<li class="navi_menu" id="nav-portfolio">
 					<a href="portfolio.do">1:1문의</a>
