@@ -8,8 +8,9 @@
 
     <!-- Custom styles for this template -->
     <link href="css/modern-business.css" rel="stylesheet">
+    <link href="bootstrap-datetimepicker-master/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
   <script type="text/javascript" src="moment-develop/min/moment.min.js"></script>
-  <script type="text/javascript" src="bootstrap-datetimepicker-master/js/locales/bootstrap-datetimepicker.*.js"></script>
+  <script type="text/javascript" src="bootstrap-datetimepicker-master/js/bootstrap-datetimepicker.min.js"></script>
 
 <!-- Page Content -->
 	<div class="container">
@@ -32,6 +33,26 @@
               10인승부터 41인승까지 여럿이 함께하는 여행에 좋은 버스 대절에 대한 모든 견적 비교 서비스를 이용해보세요.
               <hr>
               <form>
+              	<div class="row">
+				  		<div class="form-group col-md-4">
+					      <label for="inputState">카테고리1[모임성격]</label>
+					      <select id="inputState" class="form-control">
+					        <option selected>Choose...</option>
+					        <option>산악회</option>
+					        <option>야유회</option>
+					        <option>콘서트</option>
+					      </select>
+					    </div>
+					  <div class="form-group col-md-4">
+					      <label for="inputState">카테고리2[버스정원]</label>
+					      <select id="inputState" class="form-control">
+					        <option selected>Choose...</option>
+					        <option>10인승</option>
+					        <option>21인승</option>
+					        <option>41인승</option>
+					      </select>
+					    </div>
+				  </div>
 				  <div class="form-group">
 				    <label for="exampleInputEmail1">제목</label>
 				    <input type="text" class="form-control" id="exampleInputTitle" placeholder="제목을 입력하세요">
@@ -50,27 +71,6 @@
 					    </div>
 				  </div>
 				  </div>
-				  
-				  <div class="container">
-    <div class="row">
-        <div class='col-sm-6'>
-            <div class="form-group">
-                <div class='input-group date' id='datetimepicker1'>
-                    <input type='text' class="form-control" />
-                    <span class="input-group-addon">
-                        <span class="glyphicon glyphicon-calendar"></span>
-                    </span>
-                </div>
-            </div>
-        </div>
-        <script type="text/javascript">
-            $(function () {
-                $('#datetimepicker1').datetimepicker();
-            });
-        </script>
-    </div>
-</div>
-				  
 				  <div class="form-group">
 					  <div class="row">
 					  <div class="ml-5"></div>
@@ -102,16 +102,72 @@
 					    </div>
 					  </div>
 				  </div>
+				  
+				  <div class="form-group">
+					  <div class="row">
+					    <div class="col">
+					    <label for="exampleInputEmail1">인원</label>
+					      <input type="text" class="form-control" placeholder="인원을 입력하세요">
+					    </div>
+					    <div class="col">
+					    <label for="exampleInputEmail1">금액</label>
+					      <input type="text" class="form-control" placeholder="한도금액을 입력하세요">
+					    </div>
+					  </div>
+				  </div>
+				  
+				  <div class="form-group">
+				    <label for="exampleInputEmail1">옵션[해시태그]</label>
+				    <input type="text" class="form-control" id="exampleInputTitle" placeholder="제목을 입력하세요">
+				    <small id="title" class="form-text text-muted">추가 내용을 입력해주세요.</small>
+				  </div>
+				  <div class="form-group">
+                <label for="memberInfo" class="col-lg-2 control-label pl-0">개인정보취급방침</label>
+                <div class="col-lg-10 pl-0" id="memberInfo">
+                    <textarea class="form-control" rows="8" style="resize:none">개인정보의 항목 및 수집방법
+                    </textarea>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" id="memberInfoYn" name="memberInfoYn" value="Y" checked>
+                        	    동의합니다.
+                        </label>
+                    </div>
+                    <div class="radio">
+                        <label>
+                            <input type="radio" id="memberInfoYn" name="memberInfoYn" value="N">
+               			             동의하지 않습니다.
+                        </label>
+                    </div>
+                </div>
+            </div>
+				  
+					    <div class="row">
+					        <div class='col-sm-6'>
+					            <div class="form-group">
+					                <div class='input-group date' id='datetimepicker1'>
+					                    <input type='text' class="form-control" />
+					                    <span class="input-group-addon">
+					                        <span class="glyphicon glyphicon-calendar"></span>
+					                    </span>
+					                </div>
+					            </div>
+					        </div>
+					        <script type="text/javascript">
+					            $(function () {
+					                $('#datetimepicker1').datetimepicker();
+					            });
+					        </script>
+					    </div>
+            
+								
 			  </form>
 				<!-- 버튼 -->
 				<div class="row mb-3">
-					<div class="col-12 pl-3 pr-1"></div>
-					<div class="col-10 pl-3 pr-1"></div>
-					<div class="col-1 pl-0 pr-1">
-						<button class="form-control form-control-sm" onclick="cancel()">취소</button>
-					</div>
-					<div class="col-1 pl-0">
-						<button class="form-control form-control-sm" onclick="save()">저장</button>
+					<!-- <div class="col-6 pl-0 pr-1">
+						<button class="form-control form-control-sm btn btn-light" onclick="cancel()">취소</button>
+					</div> -->
+					<div class="col-12">
+						<button class="form-control form-control-sm btn btn-primary" onclick="save()">저장</button>
 					</div>
 				</div>
 				
